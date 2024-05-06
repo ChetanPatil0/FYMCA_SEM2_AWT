@@ -1,0 +1,156 @@
+* {
+  padding: 0%;
+  margin: 0%;
+}
+ .nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color:rgba(0,0,0,0.9);
+  position:sticky;
+  top: 0;
+  z-index: 2;
+}
+ .nav .nav-bar{
+width: 50%;
+}
+.nav-bar ul {
+display: flex;
+justify-content: space-between;
+list-style: none;
+}
+.nav-bar ul a{
+text-decoration: none;
+color:white;
+font-size:calc(20px);
+padding: 5px;
+border-bottom: 3px solid rgba(0,0,0,0.0);
+}
+.nav-bar ul a:hover{
+  border-bottom: 3px solid purple;
+  color: purple;
+}
+.section1{
+  width: 100%;
+  height: 60vh;
+  margin: auto;
+  text-align: center;
+  background-color:purple;
+  /* background: url('bg_Img_1.jpg'); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.section1 .welcometext{
+  width: 100%;
+  margin: auto;
+  color: #fff;
+   font-size: 25px;
+  filter: drop-shadow(5px 2px 3px black);
+}
+.notice-board{
+  position: relative;
+}
+.notice-board p{
+  position:absolute;
+  font-weight: bold;
+  text-transform:capitalize;
+  font-size: 20px;
+  background-color: purple;
+  color: #fff;
+  padding: 5px;
+  z-index: 1;
+}
+.notice-board marquee ul {
+  display: flex;
+  padding: 5px;
+}
+.notice-board marquee ul li{
+  margin-left: 50px;
+  color: purple;
+  text-transform: capitalize;
+}
+.section_2{
+  width: 85%;
+  height:auto;
+  text-align: center;
+  margin: auto;
+}
+.section_2 h1{
+  font-size: 30px; 
+  color:black;padding: 10px; 
+  border-bottom:4px solid purple;
+  width: 25%; margin: auto;
+}
+.section_2 .recruiters{
+      width:100%;
+      height:200px;
+      background-color:white;
+      margin: auto;
+      display:flex;
+      justify-content:space-evenly;
+      overflow: hidden;
+}
+.recruiters img{
+  transform: translateX(630px);
+  animation: recruiters_curosol 15s infinite;
+}
+@keyframes recruiters_curosol{
+  0%,100%{
+      transform: translateX(630px);
+  }
+  50%{
+      transform: translateX(-630px);
+  }
+}
+
+.section_3{
+  width: 85%;
+  margin: auto;
+}
+.section_3 h1{
+    font-size: 30px; 
+    color:black;padding: 10px; 
+    border-bottom:4px solid purple;
+    width: 40%;
+     margin: auto;
+     text-align: center;
+  }
+.section_3 .about {
+  font-size: 20px;
+  text-align: justify;
+  margin: 20px 0px;
+  background-color: purple;
+  color: #fff;
+  padding: 10px 30px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 30px #3b3b3b;
+}
+.section_3 .text{
+  padding:10px 3%;
+    display: flex;
+    justify-content: space-between;
+}
+.section_3 .text .vision-mission{
+  width: 60%;
+}
+.section_3 .text h2{
+  color: purple;
+}
+.section_3 .text p{
+  font-size: 18px;
+  padding:10px 0px 10px 5%;
+}
+.section_3 .text img{
+  width: 40%;
+}
+
+.footer{
+  background-color: #1d1d1d;
+  color: #c7c5c5;
+  padding: 10px 0px;
+  text-align: center;
+}
